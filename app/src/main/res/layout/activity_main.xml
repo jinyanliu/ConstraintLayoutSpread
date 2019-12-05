@@ -24,26 +24,17 @@
         android:layout_marginStart="24dp"
         android:src="@drawable/ic_more_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/firstConstraint"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/firstConstraint"
-        android:layout_width="16dp"
-        android:layout_height="0dp"
         app:layout_constraintEnd_toStartOf="@id/secondImage"
-        app:layout_constraintStart_toEndOf="@id/firstImage"
-        app:layout_constraintTop_toTopOf="@id/firstText" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/firstText"
         style="@style/TextStyle"
-        android:layout_marginStart="8dp"
         android:text="FirstFirstFirstFirstFirstFirstFirstFirstFirstFirst"
-        app:layout_constraintEnd_toStartOf="@+id/firstConstraint"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/firstImage"
+        app:layout_constraintStart_toStartOf="@id/firstImage"
         app:layout_constraintTop_toBottomOf="@id/firstImage" />
 
     <ImageView
@@ -51,24 +42,16 @@
         style="@style/ImageStyle"
         android:src="@drawable/ic_more_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/secondConstraint"
-        app:layout_constraintStart_toEndOf="@id/firstConstraint"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/secondConstraint"
-        android:layout_width="16dp"
-        android:layout_height="0dp"
         app:layout_constraintEnd_toStartOf="@id/thirdImage"
-        app:layout_constraintStart_toEndOf="@id/secondImage"
-        app:layout_constraintTop_toTopOf="@id/firstText" />
+        app:layout_constraintStart_toEndOf="@id/firstImage"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/secondText"
         style="@style/TextStyle"
         android:text="SecondSecondSecondSecondSecondSecondSecondSecondSecond"
-        app:layout_constraintEnd_toStartOf="@id/secondConstraint"
-        app:layout_constraintStart_toEndOf="@id/firstConstraint"
+        app:layout_constraintEnd_toEndOf="@id/secondImage"
+        app:layout_constraintStart_toStartOf="@id/secondImage"
         app:layout_constraintTop_toBottomOf="@id/secondImage" />
 
     <ImageView
@@ -76,24 +59,16 @@
         style="@style/ImageStyle"
         android:src="@drawable/ic_more_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/thirdConstraint"
-        app:layout_constraintStart_toEndOf="@id/secondConstraint"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/thirdConstraint"
-        android:layout_width="16dp"
-        android:layout_height="0dp"
         app:layout_constraintEnd_toStartOf="@id/fourthImage"
-        app:layout_constraintStart_toEndOf="@id/thirdImage"
-        app:layout_constraintTop_toTopOf="@id/firstText" />
+        app:layout_constraintStart_toEndOf="@id/secondImage"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/thirdText"
         style="@style/TextStyle"
         android:text="ThirdThirdThirdThirdThirdThirdThirdThirdThirdThird"
-        app:layout_constraintEnd_toStartOf="@id/thirdConstraint"
-        app:layout_constraintStart_toEndOf="@id/secondConstraint"
+        app:layout_constraintEnd_toEndOf="@id/thirdImage"
+        app:layout_constraintStart_toStartOf="@id/thirdImage"
         app:layout_constraintTop_toBottomOf="@id/thirdImage" />
 
     <ImageView
@@ -103,16 +78,15 @@
         android:src="@drawable/ic_more_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/thirdConstraint"
+        app:layout_constraintStart_toEndOf="@+id/thirdImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/fourthText"
         style="@style/TextStyle"
-        android:layout_marginEnd="8dp"
         android:text="FourthFourthFourthFourthFourthFourthFourthFourth"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/thirdConstraint"
+        app:layout_constraintEnd_toEndOf="@id/fourthImage"
+        app:layout_constraintStart_toStartOf="@id/fourthImage"
         app:layout_constraintTop_toBottomOf="@id/fourthImage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
